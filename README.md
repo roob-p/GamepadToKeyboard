@@ -90,7 +90,7 @@ Values you can assign to the buttons:
 
 <br>
 
-## Layers
+## 🖼️ Layers
 
 
  ### ⌨️ Hotkeys                                                
