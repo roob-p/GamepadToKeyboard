@@ -113,7 +113,8 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 
 
 ## 〰️ Vibration feature
-- You can add the rumble effect to every button
+- Joynix supports a quite original way to add rumble effect to the buttons.
+- 
 
 <br>
 
