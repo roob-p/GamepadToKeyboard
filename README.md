@@ -91,7 +91,7 @@ Values you can assign to the buttons:
 <br>
 
 ## 🖼️ Layers
-- Joynix supports multiple switchable slots of key assignments through Layer and Set. 
+- Joynix supports multiple switchable slots of key assignments through Layer and Set. Layer supports fallback (if a key doens't have an assignment, the correspondent value is taken from the Button section), while Set does not.
 - You can define a Layer adding a section in the .INI file using square brackets (e.g. `[inventorymenu]`). Adding the prefix `layer:` or `set:` to the name set its initial type (Layer or Set) (e.g. `[set:inventorymenu], [layer:inventorymenu]`). Types can be overridden using the Layer/Set modifiers. If no prefix is added the default type is layer.
 - Use `[LayerMode]`, `[SetMode]`, `[LayerModeToggle]`, `[SetModeToggle]` followed by the Layer/Set name in button assignments to load that Layer/Set.
 - You can also define up to 5 Layers/Sets using `LayerToCycle` in `Other` section and switch between them using `[LayerCycle+]` and `[LayerCycle-]`. These can be already defined and accessed through the modifers above or can be different new layers/set.
