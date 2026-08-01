@@ -90,6 +90,9 @@ Values you can assign to the buttons:
 
 <br>
 
+## Layers
+
+
  ### ⌨️ Hotkeys                                                
 The program supports several configurable hotkeys. They can be set in `Joynix.config` and disabled if needed.
 - **Configuration reload**: `Shift + Ctrl + 5` (already described above). 
@@ -97,7 +100,9 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 - **ShiftMode controls**: `ShiftModeToggle`, `ShiftModeCycle-`, `ShiftModeCycle+`, disabled by default. 
 - To enable/disable a hotkey, use the corresponding boolean flag in `Joynix.config`:
   e.g. `KeyboardShiftEnabled = False`.
-                                                                   
+
+
+## 〰️ Vibration feature
 
 <br>
 
