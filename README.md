@@ -90,6 +90,16 @@ Values you can assign to the buttons:
 
 <br>
 
+
+ ### ⌨️ Hotkeys                                                
+The program supports several configurable hotkeys. They can be set in `Joynix.config` and disabled if needed.
+- **Configuration reload**: `Shift + Ctrl + 5` (already described above). 
+- **Stats system**: `Shift + Ctrl + 6` (default).
+- **ShiftMode controls**: `ShiftModeToggle`, `ShiftModeCycle-`, `ShiftModeCycle+`, disabled by default. 
+- To enable/disable a hotkey, use the corresponding boolean flag in `Joynix.config`:
+  e.g. `KeyboardShiftEnabled = False`.
+
+
 ## 🖼️ Layers
 - Joynix supports multiple switchable slots of key assignments through Layer and Set.
 - `Layer` supports fallback (if a key doens't have an assignment, the correspondent value is taken from the Button section), while `Set` does not. 
@@ -101,15 +111,6 @@ Values you can assign to the buttons:
 - When you add a Layer/Set modifier in an assignment, that "activator" button will have the same function in the called layer/set (even if you try to reassign it to a new value). 
 - **Please, add Layer/Set modifiers should only in the Buttons section.**
 - Check the `LayerExample.ini` to see how layers/set work.
-
-
- ### ⌨️ Hotkeys                                                
-The program supports several configurable hotkeys. They can be set in `Joynix.config` and disabled if needed.
-- **Configuration reload**: `Shift + Ctrl + 5` (already described above). 
-- **Stats system**: `Shift + Ctrl + 6` (default).
-- **ShiftMode controls**: `ShiftModeToggle`, `ShiftModeCycle-`, `ShiftModeCycle+`, disabled by default. 
-- To enable/disable a hotkey, use the corresponding boolean flag in `Joynix.config`:
-  e.g. `KeyboardShiftEnabled = False`.
 
 
 ## 〰️ Vibration feature
