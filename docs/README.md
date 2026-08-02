@@ -8,7 +8,9 @@
 - It's designed to make controller configuration fast and simple: just open a config `.ini` and edit assignments, modifiers and variables.
 - Config files can be edited and reloaded on-the-fly using a hotkey, without restarting the application.
 - **It provides fine control over several controller aspects**: deadzone types (square/rectangular, circular with and without rescale), deadzone values (per stick, axis, or direction), axis inversion, modifiers (`[Toggle],[Turbo],[TurboToggle],[Execute],[Combo],[Sequence]` and others) and more.
-- Planned features will include a tray-resident profile switcher and a more advanced `[MACRO]` modifier.
+- Supports switchable key assignment groups: `Layer` (with fallback support) and `Set` (without fallback).
+- Includes a customizable rumble system with per-button vibration effects.
+- Planned features will include: a tray-resident profile switcher, chord mode and a more advanced `[MACRO]` modifier.
 
 
 
