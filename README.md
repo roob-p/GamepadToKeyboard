@@ -125,7 +125,7 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 - Joynix lets you create customizable vibration effects for every button.
 - Three different vibration modes are available:
    - `Hold`: vibration continues while the button is held down.
-   - `Single`: plays a single vibration each time the button is pressed (durationcan be configured in ms using `SingleDuration` variable).
+   - `Single`: send a single vibration each time the button is pressed (duration can be configured in ms using `SingleDuration` variable).
    - `Repeat`: vibration is repeated while the button is held down with an interval time (RepeatDuration and RepeatInterval are available).
 - You can define the buttons to vibrate with VibrateButtonN in the `[Vibration]` section (e.g. `VibrateButton1 = X`, `$VibrateButton2= LB` etc.) and specify the properties adding a dot and the variable to the name:  
  >   
