@@ -42,6 +42,7 @@
 - Just press the Hotkey (`Shift`+`Ctrl`+`5` by default) to instantly reload the current `.ini`, without restarting the application.
 - The Hotkey can be customized in `GamepadToKeyboard.config`. 
 
+<br>
 
 ## 🕹️ Button assignments
 Values you can assign to the buttons: 
