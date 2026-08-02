@@ -97,7 +97,7 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 - **Stats system**: `Shift + Ctrl + 6` (default).
 - **ShiftMode controls**: `ShiftModeToggle`, `ShiftModeCycle-`, `ShiftModeCycle+`, disabled by default. 
 - To enable/disable a hotkey, use the corresponding boolean flag in `Joynix.config`:
-  e.g. `KeyboardShiftEnabled = False`.
+  e.g. `KeyboardShiftEnabled = False`.  
 
 
 ## 🖼️ Layers
