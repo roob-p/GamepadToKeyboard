@@ -134,6 +134,7 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
   - VibrateButtonN.SingleDuration, VibrateButtonN.RepeatDuration, VibrateButtonN.RepeatInterval  
 - If VibrateButtonN.LeftMotorStrenth or VibrateButtonN.RightMotorStrenth are not available, Joynix looks up the global variables LeftMotorStrenth and RightMotorStrenth. If UseSameStrengthVal = 1 then the Strength global variable is used.
 - You can enable progressive vibration strength with `ProgressiveTrigger = 1` (in this mode, Style for analog trigger are ignored).
+- Supports simultaneous vibration effects from multiple buttons by automatically combining the left and right motor strengths.
 - **By combining styles, durations, intervals and motor strengths, you can create a wide variety of vibration effects.**
 
 <br>
