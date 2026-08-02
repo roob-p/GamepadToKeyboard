@@ -99,6 +99,7 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 - To enable/disable a hotkey, use the corresponding boolean flag in `Joynix.config`:
   e.g. `KeyboardShiftEnabled = False`.  
 
+<br>
 
 ## 🖼️ Layers
 - Joynix supports multiple switchable slots of key assignments through Layer and Set.
@@ -112,6 +113,7 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 - **Please, add Layer/Set modifiers should only in the Buttons section.**
 - Check the `LayerExample.ini` to see how layers/set work.
 
+<br>
 
 ## 〰️ Vibration feature
 - Joynix lets you create custom vibration effects for individual buttons.
