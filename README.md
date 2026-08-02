@@ -108,20 +108,20 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 - `Layer` supports fallback (if a key doens't have an assignment, the correspondent value is taken from the Button section), while `Set` does not. 
 - You can define a Layer adding a section in the .INI file using square brackets (e.g. `[inventorymenu]`). Adding the prefix `layer:` or `set:` to the name set its initial type (Layer or Set) (e.g. `[set:inventorymenu], [layer:inventorymenu]`). Types can be overridden using the Layer/Set modifiers. If no prefix is added the default type is layer.
 - Use `[LayerMode]`, `[SetMode]`, `[LayerModeToggle]`, `[SetModeToggle]` followed by the Layer/Set name in button assignments to load that Layer/Set.
-- You can also define up to 5 Layers/Sets using `LayerToCycle` in `Other` section and switch between them using `[LayerCycle+]` and `[LayerCycle-]`. These can be already defined and accessed through the modifers above or can be different new layers/set.
+- You can also define up to 5 Layers/Sets using `LayerToCycle` in `Other` section and switch between them using `[LayerCycle+]` and `[LayerCycle-]`. These can reference existing Layers/Sets already used by the mode modifiers, or completely different ones.
 - Each Layer/Set assignment uses one available slot, even if it references an already existing Layer/Set.
 - The maximum number of active Layer/Set assignments is 15.
-- When you add a Layer/Set modifier in an assignment, that "activator" button will have the same function in the called layer/set (even if you try to reassign it to a new value). 
-- **Please, add Layer/Set modifiers should only in the Buttons section.**
+- When you assign a Layer/Set modifier to a button, that "activator" key will have the same function in the called layer/set (even if you try to reassign it to a new value). 
+- **Please use Layer/Set modifiers only in the Buttons section.**
 - Check the `LayerExample.ini` to see how layers/set work.
 
 <br>
 
 ## 〰️ Vibration feature
-- Joynix lets you create customizable vibration effects for all the buttons.
+- Joynix lets you create customizable vibration effects for every button.
 - Three different vibration modes are available:
    - `Hold`: vibration continues while the button is held down.
-   - `Single`: plays a single vibration each time the button is pressed (duration can be set in ms with SingleDuration variable).
+   - `Single`: plays a single vibration each time the button is pressed (durationcan be configured in ms using `SingleDuration` variable).
    - `Repeat`: vibration is repeated while the button is held down with an interval time (RepeatDuration and RepeatInterval are available).
 - You can define the buttons to vibrate with VibrateButtonN in the `[Vibration]` section (e.g. `VibrateButton1 = X`, `$VibrateButton2= LB` etc.) and specify the properties adding a dot and the variable to the name:
   - VibrateButton2                   = Y 
@@ -139,7 +139,7 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
   - VibrateButtonN.SingleDuration, VibrateButtonN.RepeatDuration, VibrateButtonN.RepeatInterval  
 - If VibrateButtonN.LeftMotorStrength or VibrateButtonN.RightMotorStrength are not available, Joynix looks up the global variables LeftMotorStrength and RightMotorStrength. If `UseSameStrengthVal = 1` then the `Strength` global variable is used.
 - You can enable progressive vibration strength with `ProgressiveTrigger = 1` (in this mode, Style is ignored for analog triggers).
-- Supports simultaneous vibration effects from multiple buttons by automatically combining the left and right motor strengths.
+- Joynix supports simultaneous vibration effects from multiple buttons by automatically combining the left and right motor strengths.
 - **By combining styles, durations, intervals and motor strengths, you can create a wide variety of vibration effects.**
 
 <br>
