@@ -236,7 +236,7 @@ endif
 
 
 if $KeyboardLayerCycle="True" then
-global $LayerCycleMinushotkey=Iniread(@ScriptDir & "\" & $programName &".config","Hotkey","LayerCycleMinus","^+1"), $LayerCyclePlushotkey=Iniread(@ScriptDir & "\" & $programName &".config","Hotkey","LayerCyclePlus","^+2")
+global $LayerCycleMinushotkey=Iniread(@ScriptDir & "\" & $programName &".config","Hotkey","LayerCycle-","^+1"), $LayerCyclePlushotkey=Iniread(@ScriptDir & "\" & $programName &".config","Hotkey","LayerCycle+","^+2")
 hotkeyset(String($LayerCycleMinushotkey),LayerCycleMinusK)
 hotkeyset(String($LayerCyclePlushotkey), LayerCyclePlusK)
 $KeyboardLayerCycleEnabledWasTrue=True
@@ -3362,7 +3362,7 @@ endif
 
 
 if $KeyboardLayerCycle="True" then
-global $LayerCycleMinushotkey=Iniread(@ScriptDir & "\" & $programName &".config","Hotkey","LayerCycleMinus","^+1"), $LayerCyclePlushotkey=Iniread(@ScriptDir & "\" & $programName &".config","Hotkey","LayerCyclePlus","^+2")
+global $LayerCycleMinushotkey=Iniread(@ScriptDir & "\" & $programName &".config","Hotkey","LayerCycle-","^+1"), $LayerCyclePlushotkey=Iniread(@ScriptDir & "\" & $programName &".config","Hotkey","LayerCycle+","^+2")
 hotkeyset(String($LayerCycleMinushotkey),LayerCycleMinusK)
 hotkeyset(String($LayerCyclePlushotkey), LayerCyclePlusK)
 $KeyboardLayerCycleEnabledWasTrue=True
