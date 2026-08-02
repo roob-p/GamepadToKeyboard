@@ -127,20 +127,23 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
    - `Hold`: vibration continues while the button is held down.
    - `Single`: plays a single vibration each time the button is pressed (durationcan be configured in ms using `SingleDuration` variable).
    - `Repeat`: vibration is repeated while the button is held down with an interval time (RepeatDuration and RepeatInterval are available).
-- You can define the buttons to vibrate with VibrateButtonN in the `[Vibration]` section (e.g. `VibrateButton1 = X`, `$VibrateButton2= LB` etc.) and specify the properties adding a dot and the variable to the name:
-  - VibrateButton2                   = Y 
-  - VibrateButton2.Style             = 1
-  - VibrateButton2.LeftMotorStrength = 50
-  - VibrateButton2.SingleDuration    = 300
+- You can define the buttons to vibrate with VibrateButtonN in the `[Vibration]` section (e.g. `VibrateButton1 = X`, `$VibrateButton2= LB` etc.) and specify the properties adding a dot and the variable to the name:  
+ >   
+ > - VibrateButton2                   = Y
+ > - VibrateButton2.Style             = 1
+ > - VibrateButton2.LeftMotorStrength = 50
+ > - VibrateButton2.SingleDuration    = 300
 - If a property is not set, the corresponding global value is used.
 - You can also define `Modifier` buttons: the vibration only starts when this button is pressed together with a VibrateButton, e.g.:
-  - VibrateButton3                   = X
-  - VibrateButton3.Modifier          = LB 
+ >   
+ > - VibrateButton3                   = X
+ > - VibrateButton3.Modifier          = LB 
 - Common properties available:
-  - VibrateButtonN.Style: (0, 1, 2) 
-  - VibrateButtonN.Motor: (Left, Right, Both)
-  - VibrateButtonN.LeftMotorStrength, VibrateButtonN.RightMotorStrength
-  - VibrateButtonN.SingleDuration, VibrateButtonN.RepeatDuration, VibrateButtonN.RepeatInterval  
+ >   
+ > - VibrateButtonN.Style: (0, 1, 2) 
+ > - VibrateButtonN.Motor: (Left, Right, Both)
+ > - VibrateButtonN.LeftMotorStrength, VibrateButtonN.RightMotorStrength
+ > - VibrateButtonN.SingleDuration, VibrateButtonN.RepeatDuration, VibrateButtonN.RepeatInterval  
 - If VibrateButtonN.LeftMotorStrength or VibrateButtonN.RightMotorStrength are not available, Joynix looks up the global variables LeftMotorStrength and RightMotorStrength. If `UseSameStrengthVal = 1` then the `Strength` global variable is used.
 - You can enable progressive vibration strength with `ProgressiveTrigger = 1` (in this mode, Style is ignored for analog triggers).
 - Joynix supports simultaneous vibration effects from multiple buttons by automatically combining the left and right motor strengths.
