@@ -31,6 +31,8 @@
    - `[ShiftModeToggle]`: same as above, but the button acts as a toggle.
    - `[ShiftModeCycle-], [ShiftModeCyle+]` or `[ShiftModeCyle]`: cycle through the available Shift keys. These modifiers do not require a value (e.g. `LT = [ShiftModeCyle+]`).
    - These modifiers can also be activated via configurable keyboard hotkeys.
+ - `[LayerMode]`, `[SetMode]`, `[LayerModeToggle]`, `[SetModeToggle]`: switch to a specific Layer or Set assignment (e.g `[LayerMode] menuinventory`).
+ - `[LayerCycle-]`, `[LayerCycle]`, `[LayerCycle+]`: cycle through the Layers/Sets defined in `LayerToCycle` under the `[Other]` section. These modifiers do not require a Layer/Set name (e.g. `LT = [LayerCycle-]`, `LT = [LayerCycle+]`).
 - Set `AnalogToMouse = 1` (enabled by default) to move the mouse with the analog stick defined in `Stick` (default: `Stick = RS` ).
 - Mouse wheel input is digital when assigned to buttons, and analog/progressive when assigned to sticks or triggers.
 #### Config loading
