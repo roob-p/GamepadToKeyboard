@@ -32,6 +32,9 @@
    - `[ShiftModeToggle]`: same as above, but the button acts as a toggle.
    - `[ShiftModeCycle-], [ShiftModeCyle+]` or `[ShiftModeCyle]`: cycle through the available Shift keys. These modifiers do not require a value (e.g. `LT = [ShiftModeCyle+]`).
    - These modifiers can also be activated via configurable keyboard hotkeys.
+ - **`Layer modifiers`**:
+   - `[LayerMode]`, `[SetMode]`, `[LayerModeToggle]`, `[SetModeToggle]`: switch to a specific Layer or Set assignment (e.g `[LayerMode] menuinventory`).
+   - `[LayerCycle-]`, `[LayerCycle]`, `[LayerCycle+]`: cycle through the Layers/Sets defined in `LayerToCycle` under the `[Other]` section. These modifiers do not require a Layer/Set name (e.g. `LT = [LayerCycle-]`, `LT = [LayerCycle+]`).
 - Set `AnalogToMouse = 1` (enabled by default) to move the mouse with the analog stick defined in `Stick` (default: `Stick = RS` ).
 - Mouse wheel input is digital when assigned to buttons, and analog/progressive when assigned to sticks or triggers.
 #### Config loading
@@ -91,16 +94,62 @@ Values you can assign to the buttons:
 
 <br>  
   
-### ⌨️ Hotkeys    
+ ### ⌨️ Hotkeys                                                
 The program supports several configurable hotkeys. They can be set in `Joynix.config` and disabled if needed.
-- **Configuration reload**: `Shift + Ctrl + 5` (already described above).  
-- **Stats system**: `Shift + Ctrl + 6` (default)
-- **ShiftMode controls**: `ShiftModeToggle`, `ShiftModeCycle-`, `ShiftModeCycle+`, disabled by default.
+- **Configuration reload**: `Shift + Ctrl + 5` (enabled by default). 
+- **Stats system**: `Shift + Ctrl + 6` (enabled by default).
+- **ShiftMode controls**: `ShiftModeCycle-` *(Shift + Ctrl + 7)*, `ShiftModeCycle+` *(Shift + Ctrl + 8)*, `ShiftModeToggle` *(Shift + Ctrl + 9)*, disabled by default.
+- **Layer controls**: `LayerCycle-` *(Shift + Ctrl + 1)*, `LayerCycle+` *(Shift + Ctrl + 2)*, `LayerToggle` *(Shift + Ctrl + 3)*, disabled by default.
 - To enable/disable a hotkey, use the corresponding boolean flag in `Joynix.config`:
-  e.g. `KeyboardShiftEnabled = False`
-                                                                   
+  e.g. `KeyboardShiftEnabled = False`.  
 
-<br>  
+<br>
+
+## 🖼️ Layers
+- Joynix supports multiple switchable slots of key assignments through Layer and Set.
+- `Layer` supports fallback (if a key doens't have an assignment, the correspondent value is taken from the Button section), while `Set` does not. 
+- You can define a Layer adding a section in the .INI file using square brackets (e.g. `[inventorymenu]`).
+- Adding the prefix `layer:` or `set:` to the name section set its initial type (Layer or Set) (e.g. `[set:inventorymenu], [layer:inventorymenu]`). Types can be overridden using the Layer/Set modifiers. If no prefix is added the default type is layer.
+- Use `[LayerMode]`, `[SetMode]`, `[LayerModeToggle]`, `[SetModeToggle]` followed by the Layer/Set name in button assignments to load that Layer/Set.
+- You can also define up to 5 Layers/Sets using `LayerToCycle` in `Other` section and switch between them using `[LayerCycle+]` and `[LayerCycle-]`. These can reference existing Layers/Sets already used by the mode modifiers, or completely different ones.
+- Each Layer/Set assignment uses one available slot, even if it references an already existing Layer/Set.
+- The maximum number of active Layer/Set assignments is 15.
+- When you assign a Layer/Set modifier to a button, that "activator" key will have the same function in the called layer/set (even if you try to reassign it to a new value). 
+- **Please use Layer/Set modifiers only in the Buttons section.**
+- Check the `LayerExample.ini` to see how layers/set work.
+
+<br>
+
+## 〰️ Vibration feature
+- Joynix lets you create customizable vibration effects for every button.
+- Three different vibration modes are available:
+   - `Hold`: vibration continues while the button is held down.
+   - `Single`: send a single vibration each time the button is pressed (duration can be configured in ms using `SingleDuration` variable).
+   - `Repeat`: vibration is repeated while the button is held down with an interval time (RepeatDuration and RepeatInterval are available).
+- You can define the buttons to vibrate with VibrateButtonN in the `[Vibration]` section (e.g. `VibrateButton1 = X`, `$VibrateButton2= LB` etc.) and specify the properties adding a dot and the variable to the name:  
+ >   
+ > - VibrateButton2                   = Y
+ > - VibrateButton2.Style             = 1
+ > - VibrateButton2.LeftMotorStrength = 50
+ > - VibrateButton2.SingleDuration    = 300
+- If a property is not set, the corresponding global value is used.
+- You can also define `Modifier` buttons: the vibration only starts when this button is pressed together with a VibrateButton, e.g.:
+ >   
+ > - VibrateButton3                   = X
+ > - VibrateButton3.Modifier          = LB 
+- Common properties available:
+ >   
+ > - VibrateButtonN.Style: (0, 1, 2) 
+ > - VibrateButtonN.Motor: (Left, Right, Both)
+ > - VibrateButtonN.LeftMotorStrength, VibrateButtonN.RightMotorStrength
+ > - VibrateButtonN.SingleDuration, VibrateButtonN.RepeatDuration, VibrateButtonN.RepeatInterval  
+- If `VibrateButtonN.LeftMotorStrength` or `VibrateButtonN.RightMotorStrength` are not available, Joynix looks up the global variables `LeftMotorStrength` and `RightMotorStrength`. If `UseSameStrengthVal = 1` then the `Strength` global variable is used.
+- You can enable progressive vibration strength with `ProgressiveTrigger = 1` (in this mode, Style is ignored for analog triggers).
+- Joynix supports simultaneous vibration effects from multiple buttons by automatically combining the left and right motor strengths.
+- **By combining styles, durations, intervals and motor strengths, you can create a wide variety of vibration effects.**
+
+<br>
+                                                                   
 
 ### 🧪 Technical Notes
 - **Add only one modifier per assignment (e.g `[Turbo][Combo]` NOT supported).**
