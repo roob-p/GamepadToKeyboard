@@ -97,8 +97,8 @@ Values you can assign to the buttons:
 
  ### ⌨️ Hotkeys                                                
 The program supports several configurable hotkeys. They can be set in `Joynix.config` and disabled if needed.
-- **Configuration reload**: `Shift + Ctrl + 5` (already described above). 
-- **Stats system**: `Shift + Ctrl + 6` (default).
+- **Configuration reload**: `Shift + Ctrl + 5` (enabled by default). 
+- **Stats system**: `Shift + Ctrl + 6` (enabled by default).
 - **ShiftMode controls**: `ShiftModeCycle-` *(Shift + Ctrl + 7)*, `ShiftModeCycle+` *(Shift + Ctrl + 8)*, `ShiftModeToggle` *(Shift + Ctrl + 9)*, disabled by default.
 - **Layer controls**: `LayerCycle-` *(Shift + Ctrl + 1)*, `LayerCycle+` *(Shift + Ctrl + 2)*, `LayerToggle` *(Shift + Ctrl + 3)*, disabled by default.
 - To enable/disable a hotkey, use the corresponding boolean flag in `Joynix.config`:
