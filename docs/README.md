@@ -179,8 +179,8 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 
 <br>
 
-- Github repo: 🐙 [roop-p/Joynix](https://github.com/roob-p/Joynix/)
-- Download last version:
+- 🐙 Github repo: [roop-p/Joynix](https://github.com/roob-p/Joynix/)
+- 📥 Download last version:
   [Joynix v1.2.4](https://github.com/roob-p/GamepadToKeyboard/releases/download/v1.2.4/Joynix.exe)
   <br>
   <br>
