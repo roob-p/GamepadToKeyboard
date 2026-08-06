@@ -52,9 +52,6 @@ endif
 	$inifile=IniRead(@ScriptDir & "\" & $programName &".config","configToLoad","configToLoad","default.ini")
 	endif
 
-	;$inifile=@ScriptDir & "\" & "s.ini"
-	;$inifile=@ScriptDir & "\" & "Max Payne 2.ini"
-	$inifile=@ScriptDir & "\" & "Desktop.ini"
 
 #Region Var
 global $analogdeadzone=1, $sentKeys[256], $ignoreIndices[4]
