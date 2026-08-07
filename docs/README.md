@@ -181,7 +181,7 @@ The program supports several configurable hotkeys. They can be set in `GamepadTo
 
 - 🐙 Github repo: [roop-p/GamepadToKeyboard](https://github.com/roob-p/GamepadToKeyboard/)
 - 📥 Download last version:
-  [GamepadToKeyboard v1.2.6](https://github.com/roob-p/GamepadToKeyboard/releases/download/v1.2.6/GamepadToKeyboard.exe)
+  [GamepadToKeyboard v1.2.7](https://github.com/roob-p/GamepadToKeyboard/releases/download/v1.2.7/GamepadToKeyboard.exe)
   <br>
   <br>
 
