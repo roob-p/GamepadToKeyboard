@@ -1,4 +1,4 @@
- # 🎮 GamepadToKeyboard
+ # 🎮 GamepadToKeyboard 
 <!--![GitHub Downloads](https://img.shields.io/github/downloads/roob-p/GamepadToKeyboard/total)-->  
  
 🕹️ *Flexible gamepad input mapping for keyboard and mouse, built to be quick to set up, easy to configure and highly customizable.* 
