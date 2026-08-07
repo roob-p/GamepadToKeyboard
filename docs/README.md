@@ -1,6 +1,6 @@
 [![🔙 Back](https://img.shields.io/badge/🔙-Back-white?style=flat-square&logoColor=blue&color=blue)](https://roob-p.github.io)  
-# 🕹️ Joynix   
-<!--![GitHub Downloads](https://img.shields.io/github/downloads/roob-p/Joynix/total)-->  
+# 🕹️ GamepadToKeyboard   
+<!--![GitHub Downloads](https://img.shields.io/github/downloads/roob-p/GamepadToKeyboard/total)-->  
  
 🕹️ *Flexible gamepad input mapping for keyboard and mouse, built to be quick to set up, easy to use and highly customizable.*   
 
@@ -14,7 +14,7 @@
 
 
 
-##### ⚠️ `Joynix` requires an Xinput controller (native or emulated via tools like DS4Windows, DualSenseX, x360ce, etc.).  
+##### ⚠️ `GamepadToKeyboard` requires an Xinput controller (native or emulated via tools like DS4Windows, DualSenseX, x360ce, etc.).  
 
 
 ## 📝 Controller configuration
@@ -40,7 +40,7 @@
 - Set `AnalogToMouse = 1` (enabled by default) to move the mouse with the analog stick defined in `Stick` (default: `Stick = RS` ).
 - Mouse wheel input is digital when assigned to buttons, and analog/progressive when assigned to sticks or triggers.
 #### Config loading
-- Configs can be loaded through `ConfigToLoad` in `Joynix.config`, via command line, or by drag and drop.  
+- Configs can be loaded through `ConfigToLoad` in `GamepadToKeyboard.config`, via command line, or by drag and drop.  
 
 ### 🔄 Live config reload
 
@@ -97,18 +97,18 @@ Values you can assign to the buttons:
 <br>     
      
 ### ⌨️ Hotkeys                                                
-The program supports several configurable hotkeys. They can be set in `Joynix.config` and disabled if needed.
+The program supports several configurable hotkeys. They can be set in `GamepadToKeyboard.config` and disabled if needed.
 - **Configuration reload**: `Shift + Ctrl + 5` (enabled by default). 
 - **Stats system**: `Shift + Ctrl + 6` (enabled by default).
 - **ShiftMode controls**: `ShiftModeCycle-` *(Shift + Ctrl + 7)*, `ShiftModeCycle+` *(Shift + Ctrl + 8)*, `ShiftModeToggle` *(Shift + Ctrl + 9)*, disabled by default.
 - **Layer controls**: `LayerCycle-` *(Shift + Ctrl + 1)*, `LayerCycle+` *(Shift + Ctrl + 2)*, `LayerToggle` *(Shift + Ctrl + 3)*, disabled by default.
-- To enable/disable a hotkey, use the corresponding boolean flag in `Joynix.config`:
+- To enable/disable a hotkey, use the corresponding boolean flag in `GamepadToKeyboard.config`:
   e.g. `KeyboardShiftEnabled = False`.  
 
 <br>
 
 ## 🖼️ Layers
-- Joynix supports multiple switchable slots of key assignments through Layer and Set.
+- GamepadToKeyboard supports multiple switchable slots of key assignments through Layer and Set.
 - `Layer` supports fallback (if a key doens't have an assignment, the correspondent value is taken from the Button section), while `Set` does not. 
 - You can define a Layer adding a section in the .INI file using square brackets (e.g. `[inventorymenu]`).
 - Adding the prefix `layer:` or `set:` to the name section set its initial type (Layer or Set) (e.g. `[set:inventorymenu], [layer:inventorymenu]`). Types can be overridden using the Layer/Set modifiers. If no prefix is added the default type is layer.
@@ -123,7 +123,7 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 <br>
 
 ## 〰️ Vibration feature
-- Joynix lets you create customizable vibration effects for every button.
+- GamepadToKeyboard lets you create customizable vibration effects for every button.
 - Three different vibration modes are available:
    - `Hold`: vibration continues while the button is held down.
    - `Single`: send a single vibration each time the button is pressed (duration can be configured in ms using `SingleDuration` variable).
@@ -145,9 +145,9 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
  > - VibrateButtonN.Motor: (Left, Right, Both)
  > - VibrateButtonN.LeftMotorStrength: (Value), VibrateButtonN.RightMotorStrength: (Value)
  > - VibrateButtonN.SingleDuration, VibrateButtonN.RepeatDuration, VibrateButtonN.RepeatInterval  
-- If `VibrateButtonN.LeftMotorStrength` or `VibrateButtonN.RightMotorStrength` are not available, Joynix looks up the global variables `LeftMotorStrength` and `RightMotorStrength`. If `UseSameStrengthVal = 1` then the `Strength` global variable is used.
+- If `VibrateButtonN.LeftMotorStrength` or `VibrateButtonN.RightMotorStrength` are not available, GamepadToKeyboard looks up the global variables `LeftMotorStrength` and `RightMotorStrength`. If `UseSameStrengthVal = 1` then the `Strength` global variable is used.
 - You can enable progressive vibration strength with `ProgressiveTrigger = 1` (in this mode, Style is ignored for analog triggers).
-- Joynix supports simultaneous vibration effects from multiple buttons by automatically combining the left and right motor strengths.
+- GamepadToKeyboard supports simultaneous vibration effects from multiple buttons by automatically combining the left and right motor strengths.
 - **By combining styles, durations, intervals and motor strengths, you can create a wide variety of vibration effects.**
 
 <br>
@@ -167,19 +167,19 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 
 ### ⚠️ Notes
 - The exe that comes with the extension is 64bit. The reason is that the x64 version of Autoit programs receive minor flags from AV engines. If you need the x86 one you can download it from the main in the repo, or from the attached files in the releases.  
-- The program does not contain any malicious behaviour. If your AV engine flags it as malware it's a false positive. If so, please send `Joynix.exe` (or any associated flagged file) to your AV vendor asking for a false positive review request.
+- The program does not contain any malicious behaviour. If your AV engine flags it as malware it's a false positive. If so, please send `GamepadToKeyboard.exe` (or any associated flagged file) to your AV vendor asking for a false positive review request.
 
 
 <br>  
 
-**If you enjoy Joynix, you can buy me a coffee. It will be very appreciated ;)**  
+**If you enjoy GamepadToKeyboard, you can buy me a coffee. It will be very appreciated ;)**  
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)  
 
 
 <br>
 
-- 🐙 Github repo: [roop-p/Joynix](https://github.com/roob-p/Joynix/)
+- 🐙 Github repo: [roop-p/GamepadToKeyboard](https://github.com/roob-p/GamepadToKeyboard/)
 - 📥 Download last version:
   [Joynix v1.2.4](https://github.com/roob-p/GamepadToKeyboard/releases/download/v1.2.4/Joynix.exe)
   <br>
