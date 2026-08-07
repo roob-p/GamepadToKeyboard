@@ -1260,16 +1260,16 @@ endfunc
 func scrollwheelT($ix,$value)
 
 	if ($Analogscrollrepeat=1 and ($ix>=17 or $ix=6 or $ix=7)) or ($Digitalscrollrepeat=1 and $ix<17 and $ix<>6 and $ix<>7) then
-		if $ToggleOn[$ix]=False then $pressed[$ix]=False
+		if $ToggleOn[$l][$ix]=False then $pressed[$ix]=False
 
-		if $alreadytimerscroll[$ix]=False then
+		if $alreadytimerscroll[$l][$ix]=False then
 		scrollwheel($ix,$value)
-		$alreadytimerscroll[$ix]=True
-		$timerscroll[$ix]=TimerInit()
+		$alreadytimerscroll[$l][$ix]=True
+		$timerscroll[$l][$ix]=TimerInit()
 
-		elseif TimerDiff($timerscroll[$ix])>150 then
+		elseif TimerDiff($timerscroll[$l][$ix])>150 then
 		scrollwheel($ix,$value)
-		$timerscroll[$ix]=TimerInit()
+		$timerscroll[$l][$ix]=TimerInit()
 		endif
 
 	Else
