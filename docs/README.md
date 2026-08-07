@@ -1,6 +1,6 @@
 [![🔙 Back](https://img.shields.io/badge/🔙-Back-white?style=flat-square&logoColor=blue&color=blue)](https://roob-p.github.io)  
-# 🕹️ GamepadToKeyboard   
-<!--![GitHub Downloads](https://img.shields.io/github/downloads/roob-p/GamepadToKeyboard/total)-->  
+# 🕹️ Joynix: GamepadToKeyboard   
+<!--![GitHub Downloads](https://img.shields.io/github/downloads/roob-p/Joynix-GamepadToKeyboard/total)-->  
  
 🕹️ *Flexible gamepad input mapping for keyboard and mouse, built to be quick to set up, easy to use and highly customizable.*   
 
