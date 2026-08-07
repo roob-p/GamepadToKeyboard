@@ -39,7 +39,7 @@
 - Set `AnalogToMouse = 1` (enabled by default) to move the mouse with the analog stick defined in `Stick` (default: `Stick = RS` ).
 - Mouse wheel input is digital when assigned to buttons, and analog/progressive when assigned to sticks or triggers.
 #### Config loading
-- Configs can be loaded through `ConfigToLoad` in `Joynix.config`, via command line, or by drag and drop.  
+- Configs can be loaded through `ConfigToLoad` in `GamepadToKeyboard.config`, via command line, or by drag and drop.  
 
 ### 🔄 Live config reload
 
@@ -98,12 +98,12 @@ Values you can assign to the buttons:
 
 
  ### ⌨️ Hotkeys                                                
-The program supports several configurable hotkeys. They can be set in `Joynix.config` and disabled if needed.
+The program supports several configurable hotkeys. They can be set in `GamepadToKeyboard.config` and disabled if needed.
 - **Configuration reload**: `Shift + Ctrl + 5` (enabled by default). 
 - **Stats system**: `Shift + Ctrl + 6` (enabled by default).
 - **ShiftMode controls**: `ShiftModeCycle-` *(Shift + Ctrl + 7)*, `ShiftModeCycle+` *(Shift + Ctrl + 8)*, `ShiftModeToggle` *(Shift + Ctrl + 9)*, disabled by default.
 - **Layer controls**: `LayerCycle-` *(Shift + Ctrl + 1)*, `LayerCycle+` *(Shift + Ctrl + 2)*, `LayerToggle` *(Shift + Ctrl + 3)*, disabled by default.
-- To enable/disable a hotkey, use the corresponding boolean flag in `Joynix.config`:
+- To enable/disable a hotkey, use the corresponding boolean flag in `GamepadToKeyboard.config`:
   e.g. `KeyboardShiftEnabled = False`.  
 
 <br>
@@ -172,7 +172,7 @@ The program supports several configurable hotkeys. They can be set in `Joynix.co
 
 <br>  
 
-**If you enjoy Joynix, you can buy me a coffee. It will be very appreciated ;)**  
+**If you enjoy Joynix: GamepadToKeyboard, you can buy me a coffee. It will be very appreciated ;)**  
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)  
 
